@@ -13,7 +13,7 @@ function AppDrawer() {
         <div id="drawer" style={{boxShadow: "0px -5px 155px rgba(0, 0, 0, 0.05)", height:"86px"}} className='flex fixed  bottom-0 bg-white w-full justify-around items-center px-6'>
             <Link to="/"><Home className={classes.icon}/></Link>
             <Link to="/learn"><Learn className={classes.icon}/></Link>
-            <Link to="/add"><Plus width="73px" style={{boxShadow:"0px -5px 155px rgba(0, 0, 0, 0.05)"}} className={`${classes.icon} rounded-full -mt-14`} /></Link>
+            <Link to="/add"><Plus width="73px" style={{boxShadow:"0px -5px 155px rgba(0, 0, 0, 0.05)"}} className={`${classes.icon} rounded-full -mt-14 ml-6`} /></Link>
             <Link to="/leaderboard"><Leaderboard className={classes.icon}/></Link>
             <Link to="/profile"><Profile className={classes.icon}/></Link>
         </div>
