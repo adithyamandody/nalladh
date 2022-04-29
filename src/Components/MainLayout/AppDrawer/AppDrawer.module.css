@@ -1,0 +1,12 @@
+.icon {
+    color:#B1B1B1;
+}
+
+.icon[data-active="true"] {
+    color:#31D66C;
+
+}
+
+#drawer > * + * {
+    margin-left:50px
+}
