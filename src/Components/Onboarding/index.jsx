@@ -1,9 +1,10 @@
 import React from 'react'
 import { ReactComponent as Logo } from './logo.svg'
+import BG from "./bg.png"
 
 function Start() {
     return (
-        <div className='bg-gray-500 h-full flex flex-grow min-h-screen flex-col'>
+        <div style={{background:`url(${BG})`}} className='bg-gray-500 h-full flex flex-grow min-h-screen flex-col'>
             <div className="mx-auto"><Logo /></div>
             <div style={{ fontFamily: "Manrope", fontSize: "56.12px", color: "white", lineHeight: "58.7px" }} className="flex-grow font-bold flex flex-col justify-end  mx-8"><div>Sign up towards a greener future</div></div>
             <div className=" flex flex-col items-center w-full mt-14">
