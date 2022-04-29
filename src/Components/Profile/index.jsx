@@ -1,6 +1,6 @@
 import React from 'react';
 import BG from './bg.jpg';
-import level from './level.jpg';
+import level from './level.png';
 import badge from './badge.png';
 import tree1 from './Trees/tree1.png';
 import tree2 from './Trees/tree2.png';
