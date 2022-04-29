@@ -6,7 +6,7 @@ import useStore from "../../context"
 function Start() {
     const setState = useStore((state)=>state.toggle);
     return (
-        <div style={{background:`url(${BG})`}} className='bg-gray-500 h-full flex flex-grow min-h-screen flex-col'>
+        <div style={{background:` linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)),  url(${BG})`}} className='bg-gray-500 h-full flex flex-grow min-h-screen flex-col'>
             <div className="mx-auto"><Logo /></div>
             <div style={{ fontFamily: "Manrope", fontSize: "56.12px", color: "white", lineHeight: "58.7px" }} className="flex-grow font-bold flex flex-col justify-end  mx-8"><div>Sign up towards a greener future</div></div>
             <div className=" flex flex-col items-center w-full mt-14">
