@@ -12,6 +12,9 @@ function AppDrawer(props) {
 
     const location = useLocation();
     console.log(location.pathname)
+    const sstyle = {
+      '-webkit-tap-highlight-color': "rgba(0,0,0,0)",
+    }
   
   return (
     <div
@@ -23,16 +26,16 @@ function AppDrawer(props) {
       }}
       className='flex fixed  bottom-0 bg-white w-full justify-around items-center px-6'
     >
-      <Link to='/'>
+      <Link style={sstyle} to='/'>
         <Home className={classes.icon} data-active={location.pathname==='/'}/>
       </Link>
-      <Link to='/learn'>
+      <Link style={sstyle} to='/learn'>
         <Learn className={classes.icon}  data-active={location.pathname==='/learn'} />
       </Link>
-      <Link to='/leaderboard'>
+      <Link style={sstyle} to='/leaderboard'>
         <Leaderboard className={classes.icon}  data-active={location.pathname==='/leaderboard'}/>
       </Link>
-      <Link to='/profile'>
+      <Link style={sstyle} to='/profile'>
         <Profile className={classes.icon}  data-active={location.pathname==='/profile'}/>
       </Link>
     </div>

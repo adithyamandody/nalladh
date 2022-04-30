@@ -57,7 +57,7 @@ function Home() {
         <img src={pub} alt='' />
         <h1 className='text-xl font-bold ml-5'>Reduce Food Leftovers</h1>
       </div>
-      <Addbtn onClick={() => setState((state) => !state)} className='fixed z-10 bottom-28 right-6 cursor-pointer' />
+      <Addbtn onClick={() => setState((state) => !state)} className={`fixed ${state ? "z-20" : "z-10"} bottom-28 right-6 cursor-pointer`} />
     </div>
     <Form className={`fixed z-20 ${styles.offset} ${state ? styles.crrct : " "}`} />
     <div className="fixed top-0 left-0 w-full h-32 z-50" onClick={() => setState((st) => !st)}>
