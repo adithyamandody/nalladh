@@ -1,11 +1,9 @@
 
 .offset {
-    bottom:-200%;
-    right:-37%;
-
+    transform: translate(-20%, 100%);
     transition: all 0.5s ease;
 }
 
 .crrct {
-    bottom:-20%;
+    transform: translate(-20%, 0);
 }

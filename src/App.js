@@ -11,19 +11,20 @@ import Learn from './Components/Learn';
 import Leaderboard from './Components/Leaderboard';
 function App() {
   const state = useStore((state) => state.state);
-  return state ? (
-    <Start />
-  ) : (
+  return (
     <BrowserRouter>
-      <MainLayout>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='learn' element={<Learn />} />
-          <Route path='profile' element={<Profile />} />
-          <Route path='leaderboard' element={<Leaderboard />} />
+      {state ? (
+        <Start />
+      ) : (
+        <MainLayout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='learn' element={<Learn />} />
+            <Route path='profile' element={<Profile />} />
+            <Route path='leaderboard' element={<Leaderboard />} />
 
-        </Routes>
-      </MainLayout>
+          </Routes>
+        </MainLayout>)}
     </BrowserRouter>
   );
 }
