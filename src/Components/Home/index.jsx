@@ -1,6 +1,6 @@
 import React from 'react';
 import pub from './pub.svg';
-import light from './light.svg';
+import vector from './Vector.png';
 import roundProgressBar from './round-progress-bar1.png';
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       <div>
         <img
           src={roundProgressBar}
-          style={{ height: '757px' }}
+          // style={{ height: '757px' }}
           className='mx-auto mt-3'
         />
       </div>
@@ -28,6 +28,26 @@ function Home() {
       >
         <img src={pub} alt='' />
         <h1 className='text-xl font-bold ml-5'>Used public transport</h1>
+      </div>
+      <div
+        className='px-5 h-24 mx-3 flex items-center'
+        style={{
+          borderRadius: '5px',
+          boxShadow: ' 0px 4px 41px rgba(0, 0, 0, 0.05)',
+        }}
+      >
+        <img src={vector} alt='' />
+        <h1 className='text-xl font-bold ml-5'>Turned off light</h1>
+      </div>
+      <div
+        className='px-5 h-24 mx-3 flex items-center'
+        style={{
+          borderRadius: '5px',
+          boxShadow: ' 0px 4px 41px rgba(0, 0, 0, 0.05)',
+        }}
+      >
+        <img src={pub} alt='' />
+        <h1 className='text-xl font-bold ml-5'>Reduce Food Leftovers</h1>
       </div>
     </div>
   );

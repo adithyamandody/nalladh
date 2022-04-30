@@ -32,10 +32,10 @@ function Profile() {
         className='w-full h-64 relative'
       >
         <div className='w-full flex flex-grow absolute bottom-16 '>
-          {new Array(8).fill(0).map(() => {
+          {new Array(5).fill(0).map(() => {
             return (
               <img
-                className='w-12'
+                className='w-8 flex-shrink-0'
                 src={trees[(Math.random() * trees.length) | 0]}
               />
             );
