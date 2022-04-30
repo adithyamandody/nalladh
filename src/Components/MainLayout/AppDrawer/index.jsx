@@ -11,6 +11,7 @@ import { useLocation } from 'react-router-dom'
 function AppDrawer(props) {
 
     const location = useLocation();
+    console.log(location.pathname)
   
   return (
     <div
@@ -18,6 +19,7 @@ function AppDrawer(props) {
       style={{
         boxShadow: '0px -5px 155px rgba(0, 0, 0, 0.05)',
         height: '86px',
+        zIndex:21,
       }}
       className='flex fixed  bottom-0 bg-white w-full justify-around items-center px-6'
     >

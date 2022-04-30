@@ -3,13 +3,17 @@ import pub from './pub.svg';
 import vector from './Vector.png';
 import roundProgressBar from './round-progress-bar1.png';
 import { ReactComponent as Addbtn } from './addbtn.svg';
+import { ReactComponent as Form } from './form.svg';
 import { useState } from 'react';
 
+import styles from "./Home.module.css"
+
 function Home() {
-   const [state,setState] = useState(false);
-  return (
+  const [state, setState] = useState(false);
+  return (<>
     <div
-      style={{ background: 'linear-gradient(#fff,#fdfdfd)' }}
+      style={{ background: 'linear-gradient(#fff,#fdfdfd)', filter: state ? "blur(8px)" : "",
+      pointerEvents: state ? "none" : "normal" }}
       className='h-full w-full flex flex-col flex-grow relative'
     >
       <div className='mt-14 px-5 text-2xl'>
@@ -53,8 +57,12 @@ function Home() {
         <img src={pub} alt='' />
         <h1 className='text-xl font-bold ml-5'>Reduce Food Leftovers</h1>
       </div>
-      <Addbtn className='fixed z-20 bottom-28 right-6 cursor-pointer' />
+      <Addbtn onClick={() => setState((state) => !state)} className='fixed z-10 bottom-28 right-6 cursor-pointer' />
     </div>
+    <Form className={`fixed z-20 ${styles.offset} ${state ? styles.crrct : " "}`} />
+    <div className="fixed top-0 left-0 w-full h-32 z-50" onClick={() => setState((st) => !st)}>
+    </div></>
+
   );
 }
 
