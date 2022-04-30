@@ -1,5 +1,6 @@
 .icon {
     color:#B1B1B1;
+    transition: all 0.2s ease
 }
 
 .icon[data-active="true"] {

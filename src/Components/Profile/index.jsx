@@ -19,7 +19,7 @@ function Profile() {
         className='w-full h-32 bg-gray-200'
       ></div>
       <div className='w-full   flex flex-col'>
-        <div className='rounded-full w-20 h-20  -mt-10 mx-7 flex-shrink-0'></div>
+        <div className='rounded-full w-20 h-20  -mt-10 mx-7 flex-shrink-0 overflow-hidden'><img src={"https://bit.ly/3vSTzUu"}/></div>
         <ul className='list-none p-4 px-5'>
           <li>Hello</li>
           <li>1321323</li>

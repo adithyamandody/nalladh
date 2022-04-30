@@ -3,8 +3,10 @@ import pub from './pub.svg';
 import vector from './Vector.png';
 import roundProgressBar from './round-progress-bar1.png';
 import { ReactComponent as Addbtn } from './addbtn.svg';
+import { useState } from 'react';
 
 function Home() {
+   const [state,setState] = useState(false);
   return (
     <div
       style={{ background: 'linear-gradient(#fff,#fdfdfd)' }}
@@ -51,7 +53,7 @@ function Home() {
         <img src={pub} alt='' />
         <h1 className='text-xl font-bold ml-5'>Reduce Food Leftovers</h1>
       </div>
-      <Addbtn className='fixed z-20 bottom-28 right-6' />
+      <Addbtn className='fixed z-20 bottom-28 right-6 cursor-pointer' />
     </div>
   );
 }
