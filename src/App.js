@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Profile from './Components/Profile';
 import Start from './Components/Onboarding';
 import useStore from './context';
+import Learn from './Components/Learn';
 function App() {
   const state = useStore((state) => state.state);
   return state ? (
@@ -16,6 +17,7 @@ function App() {
       <MainLayout>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='learn' element={<Learn />} />
           <Route path='profile' element={<Profile />} />
         </Routes>
       </MainLayout>
